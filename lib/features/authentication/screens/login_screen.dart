@@ -14,8 +14,7 @@ class LoginScreen extends StatelessWidget {
             Text('Login Screen'),
             ElevatedButton(
               onPressed: () async {
-                // await AuthService.signInWithEmail(context, email: '1@1.com', password: '123456');
-                await AuthService.signInWithApple(context);
+                await AuthService.signInWithEmail(context, email: '1@1.com', password: '123456');
               },
               child: Text('Login'),
             ),
